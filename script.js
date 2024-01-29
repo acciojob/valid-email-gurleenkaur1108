@@ -1,5 +1,10 @@
 function validEmail(str) {
-  //your JS code here.
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (mailformat.test(str)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Do not change the code below.
